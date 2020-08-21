@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(".container").attr("id","testContainer")
+           var data=$(".container").attr("data")
+           console.log(data);
+        })
+    </script>
+</head>
+<body>
+     <div class="container" data="lorem ipsum">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto eius odio iste debitis! Eligendi, voluptatem. Modi earum minima in sunt nam ea animi quod. Sed tenetur laboriosam dolor minus architecto?
+    </div>
+    <hr>
+    <div class="container2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum assumenda magnam ut aliquam quam consectetur. Pariatur excepturi, aliquid laboriosam iusto laudantium rerum quaerat explicabo sint ea, maxime, cumque ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laudantium deserunt explicabo nisi suscipit dolor incidunt porro quibusdam et! Aspernatur vitae et omnis consequuntur deleniti porro iure reprehenderit nesciunt impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo libero molestiae natus in minus est rem, vero perspiciatis ad unde! Ullam culpa id voluptate adipisci sed vel harum qui?
+    </div>
+</body>
+</html>

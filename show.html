@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Show metodu elementi gösterir
+        $(document).ready(function(){
+            $(".gosterBtn").click(function(){
+               // $(".container").show("slow")
+                $(".container").show("fast")
+            })
+        })
+    </script>
+       <style>
+        .container{
+            display: none;
+            width: 200px;
+            border: 1px solid #f45134;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="gosterBtn">Göster</button>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae delectus dicta modi officiis nihil quibusdam commodi architecto sunt maiores eaque aliquam ipsam, repellendus ex aut et, assumenda numquam sequi.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quo et laboriosam consequuntur doloribus perferendis itaque corrupti impedit magnam laborum suscipit, dolorem illum illo molestias architecto enim similique, inventore reprehenderit!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque nihil dolorum? Saepe nobis temporibus deserunt consequatur et inventore perspiciatis magni laborum nemo minus vero, itaque fugiat earum? Repellat, suscipit.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ullam quis quidem ipsam minus error, at dolore cum perspiciatis atque tenetur doloremque exercitationem eligendi mollitia odio doloribus veritatis enim nobis?
+    </div>
+</body>
+</html>

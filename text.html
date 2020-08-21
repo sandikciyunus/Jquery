@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          // var text=$(".container").text();
+          //console.log(text);
+           $("#mybtn").click(function(){
+               var data=$(".container").text()
+               $(".result").text(data)
+           })
+          
+        })
+    </script>
+</head>
+<body>
+    <button id="mybtn">Veriyi değiştir</button>
+    <div class="container">
+        Bu bir deneme metnidir....
+    </div>
+    <div class="result">
+
+    </div>
+</body>
+</html>

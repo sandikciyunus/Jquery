@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+             $(".getirBtn").click(function(){
+                 var data=$(".container").html()
+                 console.log(data)
+             })
+            $(".ekleBtn").click(function(){
+                $(".container2").html("<p style='color:red'>Bu bir denemedir</p>")
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <button class="getirBtn">Getir</button>
+    <button class="ekleBtn">Ekle</button>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta doloribus corrupti fugit? Provident quibusdam hic minima aliquid a dicta itaque, fugit excepturi quo animi? Aliquid inventore delectus doloribus veniam.<small>Yunus Sandıkçı</small></p>
+        <a href="#">Sil</a>
+    </div>
+
+    <div class="container2"></div>
+</body>
+</html>

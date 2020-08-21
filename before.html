@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+         $(".ekleBtn").click(function(){
+            $(".element1").before("<p>Ben 1.elementden önce eklendim</p>")
+         })
+        })
+    </script>
+</head>
+<body>
+    <button class="ekleBtn">Ekle</button>
+    <div class="element1">
+        1.element
+    </div>
+</body>
+</html>

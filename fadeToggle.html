@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeToggle Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //FadeToggle Metodu seçmiş olduğumuz fadeIn ve fadeOut işlemini yapar
+        $(document).ready(function(){
+          $(".mybtn").click(function(){
+              $(".container").fadeToggle("fast")
+          })
+        })
+    </script>
+    <style>
+        .container{
+            display: none;
+            width: 200px;
+            border: 1px solid #f45134;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="mybtn">Toggle</button>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia quam natus rem et possimus, molestias eaque autem dolorum, quisquam magni perspiciatis earum ullam ab nam ea dolore. Adipisci, reprehenderit eum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nobis quasi sed repellat velit. Mollitia fuga omnis aperiam possimus! Ipsam sit optio consequuntur reiciendis quisquam cum saepe impedit voluptas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sequi accusamus neque, nostrum vitae laboriosam in sunt deserunt molestiae, inventore architecto aliquam et enim? Magni sed enim ad debitis assumenda?
+    </div>
+</body>
+</html>

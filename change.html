@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Change bir inputta bir değer değiştiğinde meydana gelen olaydır
+        $(document).ready(function(){
+          $(".name").change(function(){
+              var name=$(this).val()
+              $(".result").text(name+" "+$(".result").text())
+          })
+
+          $(".lastname").change(function(){
+            var lastname=$(this).val()
+            $(".result").text($(".result").text()+" "+lastname)
+          })
+          $("#il").change(function(){
+              var il=$(this).val()
+              $(".sehir").text("Seçilen il:"+il)
+          })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" class="name">
+    <input type="text" class="lastname">
+    <div class="result">
+
+    </div>
+    <hr>
+    <select id="il">
+     <option value="istanbul">İstanbul</option>
+     <option value="ankara">Ankara</option>
+    </select>
+    <div class="sehir"></div>
+</body>
+</html>

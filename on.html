@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //On metodu daha sonra eklenen bir elementin aynı iş yapmasını sağlar
+        $(document).ready(function(){
+           //$(".silBtn").click(function(){
+             //  $(".container").remove()
+           //})
+           $("body").on("click",".silBtn",function(){
+               $(".container").remove();
+           })
+
+            $(".silBtnEkle").click(function(){
+                 $("hr").after("<a href='#' class='silBtn' id='silBtn'>Eklenen sil</a>")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="silBtnEkle">Sil butonu ekle</button>
+    <br>
+    <div class="container">Bu bir test elementidir.On metodunun nasıl çalıştığını göreceğiz</div>
+    <a href="#" class="silBtn">Sil</a>
+    <hr>
+</body>
+</html>

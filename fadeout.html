@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeOut Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //FadeOut Metodu seçmiş olduğumuz elementi soldurarak kapatır
+        $(document).ready(function(){
+          $(".mybtn").click(function(){
+             // $(".container").fadeIn(3000)
+            // $(".container").fadeIn("slow")
+             $(".container").fadeIn("fast")
+          })
+
+          $(".mybtn2").click(function(){
+              $(".container").fadeOut()
+          })
+        })
+    </script>
+    <style>
+        .container{
+            display: none;
+            width: 200px;
+            border: 1px solid #f45134;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="mybtn">Göster</button>
+    <button class="mybtn2">Gizle</button>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero magnam earum a deserunt harum architecto, neque voluptas expedita consequuntur provident eos nam ullam voluptatibus similique ipsa qui in assumenda.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit amet aspernatur, cumque rem placeat pariatur ea nihil consectetur tenetur earum accusamus velit voluptate nesciunt. Aspernatur excepturi magnam eaque accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure, qui expedita enim recusandae necessitatibus sequi obcaecati ea repudiandae odit consequuntur culpa vitae dolores veniam suscipit voluptas quam cupiditate beatae.
+    </div>
+</body>
+</html>

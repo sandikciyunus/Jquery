@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Hover metodu mouse un bir elementin üzerinde olup olmadığını söyler
+        $(document).ready(function(){
+           $("ul li").hover(function(){
+               $(this).css({
+                "background-color": "aqua"
+               })
+           },function(){
+               $(this).css({
+                   "background-color":"#fff"
+               })
+           })
+        })
+    </script>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            width:200px;
+        }
+        ul li{
+            padding: 5px 10px;
+            border: 1px solid  #eee;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>2.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>3.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>4.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>5.eleman <a href="#" class="itemSil">Sil</a></li>
+    </ul>
+</body>
+</html>

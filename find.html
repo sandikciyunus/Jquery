@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Find metodu bir element içerisinde başka bir element bulmayı sağlar
+        $(document).ready(function(){
+             $(".findBtn").click(function(){
+                 $(".container").find("small").css({
+                     "color":"red"
+                 })
+             })
+        })
+    </script>
+</head>
+<body>
+    <button class="findBtn">Değiştir</button>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta doloribus corrupti fugit? Provident quibusdam hic minima aliquid a dicta itaque, fugit excepturi quo animi? Aliquid inventore delectus doloribus veniam.<small>Yunus Sandıkçı</small></p>
+    
+    </div>
+</body>
+</html>

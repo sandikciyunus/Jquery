@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideDown Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Slidedown metodu kaydırarak gösterir
+        $(document).ready(function(){
+           $(".downBtn").click(function(){
+               //$(".container").slideDown()
+              // $(".container").slideDown(3000)
+               $(".container").slideDown("slow")
+           })
+        })
+    </script>
+    <style>
+        .container{
+            display: none;
+            width: 200px;
+            border: 1px solid #f45134;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="downBtn">Göster</button>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dicta et natus consectetur. Commodi, unde dolor! Hic, laborum ipsum laudantium excepturi quam minus similique labore, esse tempore vel consectetur animi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod praesentium quis corrupti officiis dignissimos unde! Magnam exercitationem consectetur reprehenderit eos asperiores ipsam delectus reiciendis tempora, praesentium doloribus corrupti laborum impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, cum perspiciatis deserunt culpa maiores tempore obcaecati enim officiis omnis excepturi commodi animi nam suscipit magnam numquam eaque ut cumque minus!
+    </div>
+</body>
+</html>

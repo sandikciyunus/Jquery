@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        // val metodu input elementi içindeki veriyi getirir
+        $(document).ready(function(){
+          $(".mybtn").click(function(){
+              var data=$("input").val();
+              alert(data);
+          })
+
+          $(".mybtn2").click(function(){
+              $("input").val("Deneme")
+          })
+
+          $(".mybtn3").click(function(){
+              var il=$(".selectil").val()
+              alert(il)
+          })
+        })
+    </script>
+</head>
+<body>
+    <input type="text">
+    <button class="mybtn">Gönder</button>
+    <button class="mybtn2">Değiştir</button>
+    <button class="mybtn3">İl Getir</button>
+    <select class="selectil" name="il">
+        <option value="istanbul">İstanbul</option>
+        <option value="ankara">Ankara</option>
+    </select>
+</body>
+</html>

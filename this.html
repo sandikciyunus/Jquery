@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keywordu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //This keywordu seçmiş olduğumuz elementi verir
+        $(document).ready(function(){
+          $("ul li").click(function(){
+               $(this).remove()
+          })
+        })
+    </script>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            width:200px;
+        }
+        ul li{
+            padding: 5px 10px;
+            border: 1px solid  #eee;
+            margin-bottom: 5px;
+        }
+        ul li:hover{
+             background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1.eleman</li>
+        <li>2.eleman</li>
+        <li>3.eleman</li>
+        <li>4.eleman</li>
+        <li>5.eleman</li>
+    </ul>
+</body>
+</html>

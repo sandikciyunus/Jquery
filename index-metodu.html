@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndex Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //İndex metodu kaçıncı sırada olduğunu bulur arrayler 0'dan başlar
+        $(document).ready(function(){
+          $("ul li").click(function(){
+              var index=$(this).index()+1
+              console.log(index+ ".sıradaki elemana tıkladınız");
+          })
+        })
+    </script>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            width:200px;
+        }
+        ul li{
+            padding: 5px 10px;
+            border: 1px solid  #eee;
+            margin-bottom: 5px;
+        }
+        ul li:hover{
+             background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>2.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>3.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>4.eleman <a href="#" class="itemSil">Sil</a></li>
+        <li>5.eleman <a href="#" class="itemSil">Sil</a></li>
+    </ul>
+    <div>
+    
+</div>
+</body>
+</html>

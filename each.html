@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Each Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //Each metodu seçtiğimiz elemetden kaç tane varsa onu gösterir(Foreache benzer)
+        $(document).ready(function(){
+        var toplam=0
+          $("ul li span").each(function(index,element){
+              var value=parseInt($(element).text())
+              toplam=toplam+value
+          })
+          console.log(toplam)
+        })
+    </script>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            width:200px;
+        }
+        ul li{
+            padding: 5px 10px;
+            border: 1px solid  #eee;
+            margin-bottom: 5px;
+        }
+        ul li:hover{
+             background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Ahmet <span>50</span></li>
+        <li>Mehmet <span>60</span></li>
+        <li>Defne <span>100</span></li>
+        <li>Yunus <span>80</span></li>
+    </ul>
+</body>
+</html>

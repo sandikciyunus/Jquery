@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeIn Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        //FadeIn Metodu seçmiş olduğumuz elementi soldurarak bize gösterir
+        $(document).ready(function(){
+          $(".mybtn").click(function(){
+             // $(".container").fadeIn(3000)
+            // $(".container").fadeIn("slow")
+             $(".container").fadeIn("fast")
+          })
+        })
+    </script>
+    <style>
+        .container{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero magnam earum a deserunt harum architecto, neque voluptas expedita consequuntur provident eos nam ullam voluptatibus similique ipsa qui in assumenda.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit amet aspernatur, cumque rem placeat pariatur ea nihil consectetur tenetur earum accusamus velit voluptate nesciunt. Aspernatur excepturi magnam eaque accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure, qui expedita enim recusandae necessitatibus sequi obcaecati ea repudiandae odit consequuntur culpa vitae dolores veniam suscipit voluptas quam cupiditate beatae.
+    </div>
+    <button class="mybtn">Göster</button>
+</body>
+</html>

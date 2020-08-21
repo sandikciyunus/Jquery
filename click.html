@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Metodu</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".mybutton").click(function(){
+              //alert("yunus")
+              $(".container").css({
+                  "background-color":"blue",
+                   "font-size":"25px"
+              })
+          })
+          $(".click").click(function(){
+              alert("yunus")
+          })
+        })
+    </script>
+</head>
+<body>
+    <button class="mybutton">Tıkla</button>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eveniet, molestias quas nobis deleniti eius ex est, repellendus quia, excepturi facere eos iure vero doloremque aut dolores labore velit voluptas?
+    </div>
+    <hr>
+    <div class="click">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aut quibusdam ullam dolorem, magnam possimus neque aspernatur. Delectus similique optio fugit blanditiis vitae accusamus architecto praesentium deserunt perspiciatis, voluptatem vero!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum sequi deserunt saepe quaerat, cupiditate natus excepturi velit sed a error maiores nemo inventore eligendi eos id aperiam ipsum! Optio!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cum perferendis nihil accusantium maxime quos, numquam suscipit quas pariatur sapiente autem rem, provident possimus iusto voluptates minus consequuntur in quisquam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At soluta iusto possimus aperiam atque beatae cumque, ad eligendi facere laudantium saepe nisi alias! Sapiente, quo? Maiores natus vitae iusto provident.
+    </div>
+</body>
+</html>
